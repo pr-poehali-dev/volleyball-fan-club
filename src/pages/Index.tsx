@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import NewsSection from "@/components/NewsSection";
 import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -43,8 +44,25 @@ const Index = () => {
         </div>
       </section>
       
-      <NewsSection />
-      <TeamSection />
+      <section className="py-10 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-4 text-center">Последние новости</h2>
+          <NewsSection />
+          <div className="text-center mt-4">
+            <Link to="/news" className="text-primary hover:underline">Все новости →</Link>
+          </div>
+        </div>
+      </section>
+      
+      <section className="py-10">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-4 text-center">Игроки команды</h2>
+          <TeamSection />
+          <div className="text-center mt-4">
+            <Link to="/players" className="text-primary hover:underline">Весь состав →</Link>
+          </div>
+        </div>
+      </section>
       
       <section className="py-8 bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
@@ -52,9 +70,11 @@ const Index = () => {
           <p className="mb-6">
             Станьте частью нашей большой волейбольной семьи.
           </p>
-          <button className="bg-white text-primary px-6 py-2 rounded font-bold">
-            Вступить в фан-клуб
-          </button>
+          <Link to="/contact">
+            <button className="bg-white text-primary px-6 py-2 rounded font-bold">
+              Вступить в фан-клуб
+            </button>
+          </Link>
         </div>
       </section>
       

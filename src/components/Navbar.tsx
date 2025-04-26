@@ -8,9 +8,9 @@ const Navbar = () => {
         <div className="font-bold text-xl">Фан-клуб "Динамо"</div>
         <div className="hidden md:flex space-x-6">
           <Link to="/" className="hover:underline">Главная</Link>
-          <Link to="/" className="hover:underline">Новости</Link>
-          <Link to="/" className="hover:underline">Игроки</Link>
-          <Link to="/" className="hover:underline">Контакты</Link>
+          <Link to="/news" className="hover:underline">Новости</Link>
+          <Link to="/players" className="hover:underline">Игроки</Link>
+          <Link to="/contact" className="hover:underline">Контакты</Link>
         </div>
       </div>
     </nav>

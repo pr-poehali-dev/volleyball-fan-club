@@ -31,14 +31,15 @@ const Contact = () => {
                 <span className="font-medium">Email:</span><br />
                 info@dinamo-fanclub.ru
               </p>
-              <p>
+              {/* Исправлено: перенесено из тега p в отдельный div */}
+              <div>
                 <span className="font-medium">Социальные сети:</span><br />
                 <div className="flex space-x-4 mt-2">
                   <a href="#" className="text-primary hover:underline">ВКонтакте</a>
                   <a href="#" className="text-primary hover:underline">Telegram</a>
                   <a href="#" className="text-primary hover:underline">Instagram</a>
                 </div>
-              </p>
+              </div>
             </div>
           </div>
           
